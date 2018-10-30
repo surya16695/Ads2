@@ -1,100 +1,143 @@
-import java.util.*;
+import java.util.Scanner;
+/**
+ * Interface for graph.
+ */
 interface Graph {
+    /**
+     * Verztices num.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int V();
+    /**
+     * Edges num.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int E();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     public void addEdge(int v, int w);
+    /**
+     * Iterator for bag.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w);
 }
 /**
  * Class for graphmaker.
  */
 class Graphmaker implements Graph {
-	int v;
-	int e;
-	Bag<Integer> [] adj;
+    /**
+     * num of vertices.
+     */
+    int v;
+    /**
+     * num of edges.
+     */
+    int e;
+    /**
+     * bag type array.
+     */
+    Bag<Integer> [] adj;
 
-	/**
-	 * Constructs the object.
-	 */
-	Graphmaker() {
+    /**
+     * Constructs the object.
+     */
+    Graphmaker() {
 
-	}
+    }
 
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      v1    The v 1
-	 */
-	Graphmaker(int v1) {
+    /**
+     * Constructs the object.
+     *
+     * @param      v1    The v 1
+     */
+    Graphmaker(int v1) {
         this.v = v1;
         this.e = 0;
         adj = (Bag<Integer>[]) new Bag[v];
-		for (int i = 0; i < v; i++) {
-			adj[i] =  new Bag<Integer>();
-		}
-	}
-
-	/**
-	 * No.of vertices.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int V() {
-		return v;
-	}
-
-	/**
-	 * No.of edges.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int E() {
-		return e;
-	}
-
-	/**
-	 * Adds an edge.
-	 *
-	 * @param      v     { parameter_description }
-	 * @param      w     { parameter_description }
-	 */
-	public void addEdge(int v, int w) {
-		if (v == w) {
-			return;
-		}
-		if (!hasEdge(v, w)) {
-			e++;
-			adj[v].add(w);
-			adj[w].add(v);
-		}
-	}
-
-	/**
-	 * Determines if it has edge.
-	 *
-	 * @param      v     { parameter_description }
-	 * @param      w     { parameter_description }
-	 *
-	 * @return     True if has edge, False otherwise.
-	 */
-	public boolean hasEdge(int v, int w) {
-		for(int each: adj[v]) {
-				if (each == w) {
-					return true;
-				}
-		}
-		return false;
+        for (int i = 0; i < v; i++) {
+            adj[i] =  new Bag<Integer>();
+        }
     }
 
-	/**
-	 * Iterable bag elements.
-	 *
-	 * @param      v     { parameter_description }
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public Iterable<Integer> adj(int v) {
+    /**
+     * No.of vertices.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int V() {
+        return v;
+    }
+
+    /**
+     * No.of edges.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int E() {
+        return e;
+    }
+
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
+    public void addEdge(int v, int w) {
+        if (v == w) {
+            return;
+        }
+        if (!hasEdge(v, w)) {
+            e++;
+            adj[v].add(w);
+            adj[w].add(v);
+        }
+    }
+
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
+    public boolean hasEdge(int v, int w) {
+        for(int each: adj[v]) {
+                if (each == w) {
+                    return true;
+                }
+        }
+        return false;
+    }
+
+    /**
+     * Iterable bag elements.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Integer> adj(int v) {
         return adj[v];
     }
     /**
@@ -107,20 +150,20 @@ class Graphmaker implements Graph {
      * @throws     Exception  { exception_description }
      */
     public void listView(int v, int e, String[] tokens) throws Exception {
-    	if (e <= 1 && v <= 1) {
-    		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    		throw new Exception("No edges");
-    	} else {
-    		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    		for (int i = 0; i < tokens.length; i++) {
-			String str = "";
-			str = tokens[i] + ": ";
-			for (int k : adj(i)) {
-				str = str + tokens[k] + " ";
-			}
-			System.out.println(str);
-			}
-    	}
+        if (e <= 1 && v <= 1) {
+            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            throw new Exception("No edges");
+        } else {
+            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            for (int i = 0; i < tokens.length; i++) {
+            String str = "";
+            str = tokens[i] + ": ";
+            for (int k : adj(i)) {
+                str = str + tokens[k] + " ";
+            }
+            System.out.println(str);
+            }
+        }
     }
     /**
      * matrix printing.
@@ -131,73 +174,73 @@ class Graphmaker implements Graph {
      * @throws     Exception  { exception_description }
      */
     void matrixView(int v, int e) throws Exception {
-    	if (e <= 1 && v <= 1) {
-    		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    		throw new Exception("No edges");
-    	} else {
-    		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    		int[][] disp = new int[v][v];
-    		for (int i = 0; i  < v; i++) {
-    			for (int j = 0; j < v; j++) {
-    				if (hasEdge(i, j)) {
-    					disp[i][j] = 1;
-		    		}
-    			}
-    		}
+        if (e <= 1 && v <= 1) {
+            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            throw new Exception("No edges");
+        } else {
+            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            int[][] disp = new int[v][v];
+            for (int i = 0; i  < v; i++) {
+                for (int j = 0; j < v; j++) {
+                    if (hasEdge(i, j)) {
+                        disp[i][j] = 1;
+                    }
+                }
+            }
 
-    		for (int i = 0; i < v; i++) {
-    			for (int j = 0; j < v; j++) {
-    				System.out.print(disp[i][j] + " ");
-    			}
-    			System.out.println();
-    		}
-    		
-    	}
+            for (int i = 0; i < v; i++) {
+                for (int j = 0; j < v; j++) {
+                    System.out.print(disp[i][j] + " ");
+                }
+                System.out.println();
+            }
+            
+        }
     }
 }
 /**
  * Class for solution.
  */
-class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	Solution() {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
 
-	}
-	/**
-	 * main function.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String input = sc.nextLine();
-		int a = Integer.parseInt(sc.nextLine());
-		int b = Integer.parseInt(sc.nextLine());
-		Graphmaker g = new Graphmaker(a);
-		// sc.nextLine();
-		String[] line = sc.nextLine().split(",");
-		while(sc.hasNext()) {
-			String num = sc.nextLine();
-			String[] numbers = num.split(" ");
-			g.addEdge(Integer.parseInt(numbers[0]), Integer.parseInt(numbers[1]));
-		}
-		switch (input) {
-			case "List":
-			try {
-				g.listView(a, b, line);
-			} catch (Exception p) {
-				System.out.println(p.getMessage());
-			}
-			break;
-			case "Matrix":
-			try {
-				g.matrixView(a, b);
-			} catch (Exception p) {
-				System.out.println(p.getMessage());
-			}
-			break;
-		}
-	}
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        int a = Integer.parseInt(sc.nextLine());
+        int b = Integer.parseInt(sc.nextLine());
+        Graphmaker g = new Graphmaker(a);
+        // sc.nextLine();
+        String[] line = sc.nextLine().split(",");
+        while(sc.hasNext()) {
+            String num = sc.nextLine();
+            String[] numbers = num.split(" ");
+            g.addEdge(Integer.parseInt(numbers[0]), Integer.parseInt(numbers[1]));
+        }
+        switch (input) {
+            case "List":
+            try {
+                g.listView(a, b, line);
+            } catch (Exception p) {
+                System.out.println(p.getMessage());
+            }
+            break;
+            case "Matrix":
+            try {
+                g.matrixView(a, b);
+            } catch (Exception p) {
+                System.out.println(p.getMessage());
+            }
+            break;
+        }
+    }
 }
