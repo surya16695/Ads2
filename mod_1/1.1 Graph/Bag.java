@@ -24,11 +24,14 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      *  number of elements in bag.
      */
-    private int N;
-    // beginning of bag
+    private int n;
+    /**
+     *beginning of bag
+     */
     private Node first;
-
-    // helper linked list class
+    /**
+     * Class for node.
+     */
     private class Node {
         /**
          * Item type item.
@@ -54,9 +57,9 @@ public class Bag<Item> implements Iterable<Item> {
          * @param      item   The item
          * @param      value  The value
          */
-        Node(Item item, int value) {
-            this.item = item;
-            this.value = value;
+        Node(final Item i, final int v) {
+            this.item = i;
+            this.value = v;
         }
     }
 
@@ -65,43 +68,47 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
    /**
      * Is the BAG empty?
+     * @return boolean.
      */
     public boolean isEmpty() {
         return first == null;
     }
-
-   /**
-     * Return the number of items in the bag.
+    /**
+     * Size of bag.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return n;
     }
 
    /**
      * Add the item to the bag.
      */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
-
+    /**
+     * Class for list iterator.
     // an iterator, doesn't implement remove() since it's optional
+     */
     private class ListIterator implements Iterator<Item> {
         /**
          * Starting node.
@@ -131,10 +138,12 @@ public class Bag<Item> implements Iterable<Item> {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
 
 }
+
+
 
