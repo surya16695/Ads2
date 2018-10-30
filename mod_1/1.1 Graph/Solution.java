@@ -38,9 +38,9 @@ class Graphmaker implements Graph {
 		}
 		if (!hasEdge(v, w)) {
 			e++;
+			adj[v].add(w);
+			adj[w].add(v);
 		}
-		adj[v].add(w);
-		adj[w].add(v);
 	}
 
 	public boolean hasEdge(int v, int w) {
