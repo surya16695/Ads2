@@ -72,9 +72,9 @@ class Graphmaker {
     Graphmaker(final int v1) {
         this.v = v1;
         this.e = 0;
-        adj = (Bag<Integer>[]) new Bag[v];
+        adj = (Bag< Integer >[]) new Bag[v];
         for (int i = 0; i < v; i++) {
-            adj[i] =  new Bag<Integer>();
+            adj[i] =  new Bag< Integer >();
         }
     }
 
@@ -116,7 +116,7 @@ class Graphmaker {
     /**
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
+     * @param      ve     { parameter_description }
      * @param      w     { parameter_description }
      *
      * @return     True if has edge, False otherwise.
@@ -133,7 +133,7 @@ class Graphmaker {
     /**
      * Iterable bag elements.
      *
-     * @param      v     { parameter_description }
+     * @param      ve     { parameter_description }
      *
      * @return     { description_of_the_return_value }
      */
@@ -143,8 +143,8 @@ class Graphmaker {
     /**
      * Prints in list view.
      *
-     * @param      v          { parameter_description }
-     * @param      e          { parameter_description }
+     * @param      ve          { parameter_description }
+     * @param      ed          { parameter_description }
      * @param      tokens     The tokens
      *
      * @throws     Exception  { exception_description }
@@ -168,8 +168,8 @@ class Graphmaker {
     /**
      * matrix printing.
      *
-     * @param      ver          { parameter_description }
-     * @param      e          { parameter_description }
+     * @param      ve         { parameter_description }
+     * @param      ed          { parameter_description }
      *
      * @throws     Exception  { exception_description }
      */
@@ -204,7 +204,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    private Solution() {
 
     }
     /**
