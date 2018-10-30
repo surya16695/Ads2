@@ -105,6 +105,7 @@ class Solution {
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		Graphmaker g = new Graphmaker(a);
+		sc.nextLine();
 		String[] line = sc.nextLine().split(",");
 		while(sc.hasNext()) {
 			String num = sc.nextLine();
