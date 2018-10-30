@@ -18,6 +18,7 @@ class Graphmaker implements Graph {
 	Graphmaker(int v1) {
         this.v = v1;
         this.e = 0;
+        adj = (Bag<Integer>[]) new Bag[v];
 		for (int i = 0; i < v; i++) {
 			adj[i] =  new Bag<Integer>();
 		}
