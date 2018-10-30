@@ -1,19 +1,6 @@
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Bag.java:28: First sentence should end with a period. [JavadocStyle]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Bag.java:92: Unused Javadoc tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Bag.java:94:32: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Bag.java:90: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:58:17: '<' is followed by whitespace. [GenericWhitespace]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:58:25: '>' is preceded with whitespace. [GenericWhitespace]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:58:27: '>' is followed by whitespace. [NoWhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:75:20: '<' is followed by whitespace. [GenericWhitespace]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:75:28: '>' is preceded with whitespace. [GenericWhitespace]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:77:31: '<' is followed by whitespace. [GenericWhitespace]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:77:39: '>' is preceded with whitespace. [GenericWhitespace]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:105:35: 'v' hides a field. [HiddenField]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:152: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_1\1.1 Graph\Solution.java:203: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 10 errors.

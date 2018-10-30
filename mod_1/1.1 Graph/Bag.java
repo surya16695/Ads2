@@ -26,7 +26,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private int n;
     /**
-     *beginning of bag
+     *beginning of bag.
      */
     private Node first;
     /**
@@ -87,9 +87,10 @@ public class Bag<Item> implements Iterable<Item> {
         return n;
     }
 
-   /**
-     * Add the item to the bag.
-     * @return item.
+    /**
+     * { function_description }
+     *
+     * @param      item  The item
      */
     public void add(final Item item) {
         Node oldfirst = first;

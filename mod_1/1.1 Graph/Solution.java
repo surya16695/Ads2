@@ -55,7 +55,7 @@ class Graphmaker {
     /**
      * bag type array.
      */
-    private Bag< Integer > [] adj;
+    private Bag<Integer>[] adj;
 
     /**
      * Constructs the object.
@@ -72,9 +72,9 @@ class Graphmaker {
     Graphmaker(final int v1) {
         this.v = v1;
         this.e = 0;
-        adj = (Bag< Integer >[]) new Bag[v];
+        adj = (Bag<Integer>[]) new Bag[v];
         for (int i = 0; i < v; i++) {
-            adj[i] =  new Bag< Integer >();
+            adj[i] =  new Bag<Integer>();
         }
     }
 
@@ -99,17 +99,17 @@ class Graphmaker {
     /**
      * Adds an edge.
      *
-     * @param      v     { parameter_description }
+     * @param      ve     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(final int v, final int w) {
-        if (v == w) {
+    public void addEdge(final int ve, final int w) {
+        if (ve == w) {
             return;
         }
-        if (!hasEdge(v, w)) {
+        if (!hasEdge(ve, w)) {
             e++;
-            adj[v].add(w);
-            adj[w].add(v);
+            adj[ve].add(w);
+            adj[w].add(ve);
         }
     }
 
@@ -149,7 +149,8 @@ class Graphmaker {
      *
      * @throws     Exception  { exception_description }
      */
-    public void listView(final int ve, final int ed, final String[] tokens) throws Exception {
+    public void listView(final int ve,
+     final int ed, final String[] tokens) throws Exception {
         if (ed <= 1 && ve <= 1) {
             System.out.println(ver() + " vertices" + ", " + edg() + " edges");
             throw new Exception("No edges");
@@ -200,7 +201,7 @@ class Graphmaker {
 /**
  * Class for solution.
  */
-class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
