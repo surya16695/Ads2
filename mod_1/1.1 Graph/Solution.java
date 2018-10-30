@@ -6,15 +6,26 @@ interface Graph {
     public Iterable<Integer> adj(int v);
     public boolean hasEdge(int v, int w);
 }
+/**
+ * Class for graphmaker.
+ */
 class Graphmaker implements Graph {
 	int v;
 	int e;
 	Bag<Integer> [] adj;
 
+	/**
+	 * Constructs the object.
+	 */
 	Graphmaker() {
 
 	}
 
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      v1    The v 1
+	 */
 	Graphmaker(int v1) {
         this.v = v1;
         this.e = 0;
@@ -24,14 +35,30 @@ class Graphmaker implements Graph {
 		}
 	}
 
+	/**
+	 * No.of vertices.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V() {
 		return v;
 	}
 
+	/**
+	 * No.of edges.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int E() {
 		return e;
 	}
 
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
 	public void addEdge(int v, int w) {
 		if (v == w) {
 			return;
@@ -43,6 +70,14 @@ class Graphmaker implements Graph {
 		}
 	}
 
+	/**
+	 * Determines if it has edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 *
+	 * @return     True if has edge, False otherwise.
+	 */
 	public boolean hasEdge(int v, int w) {
 		for(int each: adj[v]) {
 				if (each == w) {
@@ -52,9 +87,25 @@ class Graphmaker implements Graph {
 		return false;
     }
 
+	/**
+	 * Iterable bag elements.
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<Integer> adj(int v) {
         return adj[v];
     }
+    /**
+     * Prints in list view.
+     *
+     * @param      v          { parameter_description }
+     * @param      e          { parameter_description }
+     * @param      tokens     The tokens
+     *
+     * @throws     Exception  { exception_description }
+     */
     public void listView(int v, int e, String[] tokens) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
@@ -71,6 +122,14 @@ class Graphmaker implements Graph {
 			}
     	}
     }
+    /**
+     * matrix printing.
+     *
+     * @param      v          { parameter_description }
+     * @param      e          { parameter_description }
+     *
+     * @throws     Exception  { exception_description }
+     */
     void matrixView(int v, int e) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
@@ -96,10 +155,21 @@ class Graphmaker implements Graph {
     	}
     }
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 
 	}
+	/**
+	 * main function.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();
