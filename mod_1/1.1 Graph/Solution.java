@@ -1,61 +1,61 @@
 import java.util.Scanner;
-/**
- * Interface for graph.
- */
-interface Graph {
-    /**
-     * Verztices num.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int ver();
-    /**
-     * Edges num.
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public int edg();
-    /**
-     * Adds an edge.
-     *
-     * @param      ve     { parameter_description }
-     * @param      w     { parameter_description }
-     */
-    public void addEdge(int ve, int w);
-    /**
-     * Iterator for bag.
-     *
-     * @param      ve     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public Iterable<Integer> adj(int ve);
-    /**
-     * Determines if it has edge.
-     *
-     * @param      ve     { parameter_description }
-     * @param      w     { parameter_description }
-     *
-     * @return     True if has edge, False otherwise.
-     */
-    public boolean hasEdge(int ve, int w);
-}
+// /**
+//  * Interface for graph.
+//  */
+// interface Graph {
+//     /**
+//      * Verztices num.
+//      *
+//      * @return     { description_of_the_return_value }
+//      */
+//     int ver();
+//     /**
+//      * Edges num.
+//      *
+//      * @return     { description_of_the_return_value }
+//      */
+//     int edg();
+//     /**
+//      * Adds an edge.
+//      *
+//      * @param      v     { parameter_description }
+//      * @param      w     { parameter_description }
+//      */
+//     void addEdge(int v, int w);
+//     /**
+//      * Iterator for bag.
+//      *
+//      * @param      v     { parameter_description }
+//      *
+//      * @return     { description_of_the_return_value }
+//      */
+//     Iterable<Integer> adj(int v);
+//     /**
+//      * Determines if it has edge.
+//      *
+//      * @param      v     { parameter_description }
+//      * @param      w     { parameter_description }
+//      *
+//      * @return     True if has edge, False otherwise.
+//      */
+//     boolean hasEdge(int v, int w);
+// }
 /**
  * Class for graphmaker.
  */
-class Graphmaker implements Graph {
+class Graphmaker {
     /**
      * num of vertices.
      */
-    int v;
+    private int v;
     /**
      * num of edges.
      */
-    int e;
+    private int e;
     /**
      * bag type array.
      */
-    private Bag<Integer> [] adj;
+    private Bag< Integer > [] adj;
 
     /**
      * Constructs the object.
@@ -67,9 +67,9 @@ class Graphmaker implements Graph {
     /**
      * Constructs the object.
      *
-     * @param      v1    The ve 1
+     * @param      v1    The v 1
      */
-    Graphmaker(int v1) {
+    Graphmaker(final int v1) {
         this.v = v1;
         this.e = 0;
         adj = (Bag<Integer>[]) new Bag[v];
@@ -102,7 +102,7 @@ class Graphmaker implements Graph {
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(int ve, int w) {
+    public void addEdge(final int v, final int w) {
         if (v == w) {
             return;
         }
@@ -121,8 +121,8 @@ class Graphmaker implements Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        for(int each: adj[v]) {
+    public boolean hasEdge(final int ve, final int w) {
+        for (int each: adj[ve]) {
                 if (each == w) {
                     return true;
                 }
@@ -137,7 +137,7 @@ class Graphmaker implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> adj(int ve) {
+    public Iterable<Integer> adj(final int ve) {
         return adj[ve];
     }
     /**
@@ -149,7 +149,7 @@ class Graphmaker implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void listView(int ve, int ed, String[] tokens) throws Exception {
+    public void listView(final int ve, final int ed, final String[] tokens) throws Exception {
         if (ed <= 1 && ve <= 1) {
             System.out.println(ver() + " vertices" + ", " + edg() + " edges");
             throw new Exception("No edges");
@@ -173,22 +173,22 @@ class Graphmaker implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    void matrixView(int ve, int ed) throws Exception {
+    void matrixView(final int ve, final int ed) throws Exception {
         if (ed <= 1 && ve <= 1) {
             System.out.println(ver() + " vertices" + ", " + edg() + " edges");
             throw new Exception("No edges");
         } else {
             System.out.println(ver() + " vertices" + ", " + edg() + " edges");
             int[][] disp = new int[ve][ve];
-            for (int i = 0; i  < ve; i++) {
-                for (int j = 0; j < ve; j++) {
+            for (int i = 0; i  < v; i++) {
+                for (int j = 0; j < v; j++) {
                     if (hasEdge(i, j)) {
                         disp[i][j] = 1;
                     }
                 }
             }
 
-            for (int i = 0; i < ve; i++) {
+            for (int i = 0; i < v; i++) {
                 for (int j = 0; j < ve; j++) {
                     System.out.print(disp[i][j] + " ");
                 }

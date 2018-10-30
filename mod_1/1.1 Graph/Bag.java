@@ -54,8 +54,8 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * Constructs the object.
          *
-         * @param      item   The item
-         * @param      value  The value
+         * @param      i  The item
+         * @param      v  The value
          */
         Node(final Item i, final int v) {
             this.item = i;
@@ -89,6 +89,7 @@ public class Bag<Item> implements Iterable<Item> {
 
    /**
      * Add the item to the bag.
+     * @return item.
      */
     public void add(final Item item) {
         Node oldfirst = first;
@@ -98,7 +99,7 @@ public class Bag<Item> implements Iterable<Item> {
         n++;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
