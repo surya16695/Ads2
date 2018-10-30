@@ -101,10 +101,10 @@ class Solution {
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		String input = sc.nextLine();
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		Graphmaker g = new Graphmaker(a);
-		String input = sc.nextLine();
 		String[] line = sc.nextLine().split(",");
 		while(sc.hasNext()) {
 			String num = sc.nextLine();
