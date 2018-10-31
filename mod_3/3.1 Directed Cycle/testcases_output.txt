@@ -3,17 +3,8 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -21,17 +12,8 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -40,13 +22,7 @@ Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -54,7 +30,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -62,12 +38,8 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -76,13 +48,7 @@ Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle doesn't exists.
 Cycle exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -90,19 +56,14 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
+
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
-Cycle doesn't exists.
 ----------------------------------------
 

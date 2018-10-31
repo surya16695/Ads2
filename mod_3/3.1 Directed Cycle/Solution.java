@@ -122,7 +122,6 @@ class DFs {
             	break;
             }
         }
-        System.out.println("Cycle doesn't exists.");
     }
     private void validateVertex(int v) {
         int V = marked.length;
