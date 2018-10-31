@@ -4,8 +4,7 @@
  *
  *  A generic stack, implemented using a linked list. Each stack
  *  element is of type Item.
- *  
- *  % more tobe.txt 
+ *  % more tobe.txt
  *  to be or not to - be - - that - - - is
  *
  *  % java Stack < tobe.txt
@@ -28,7 +27,8 @@ import java.util.NoSuchElementException;
  *  <p>
  *  All stack operations except iteration are constant time.
  *  <p>
- *  For additional documentation, see <a href="/algs4/13stacks">Section 1.3</a> of
+ *  For additional documentation, see .
+ *  <a href="/algs4/13stacks">Section 1.3</a> of.
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class Stack<Item> implements Iterable<Item> {
@@ -36,6 +36,9 @@ public class Stack<Item> implements Iterable<Item> {
      * integer n.
      */
     private int n;          // size of the stack
+    /**
+     * first node initialization.
+     */
     private Node first;     // top of stack
     /**
      * Class for node.
@@ -76,10 +79,10 @@ public class Stack<Item> implements Iterable<Item> {
     public int size() {
         return n;
     }
-
-   /**
-     * Add the item to the stack.
-     * @param item.
+    /**
+     * { function_description }.
+     *
+     * @param      item  The item
      */
     public void push(final Item item) {
         Node oldfirst = first;
@@ -192,4 +195,6 @@ public class Stack<Item> implements Iterable<Item> {
         StdOut.println("(" + s.size() + " left on stack)");
     }*/
 }
+
+
 
