@@ -10,11 +10,11 @@ public class Bag<Item> implements Iterable<Item> {
     /**
      * { var_description }.
      */
-    private int n;// number of elements in bag
+    private int n; // number of elements in bag
     /**
      * { var_description }.
      */
-    private Node first;// beginning of bag
+    private Node first; // beginning of bag
     /**
      * Class for node.
      */
@@ -113,5 +113,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
 }
+
+
 
 

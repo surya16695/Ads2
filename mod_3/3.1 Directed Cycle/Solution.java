@@ -103,61 +103,61 @@ class DiGraph {
  * Class for DFS.
  */
 class DFs {
-	/**
-	 * Boolean array for the vertices.
-	 */
-	boolean[] marked;
-	/**
-	 * gives bool whether element is present or not in stack.
-	 */
-	boolean[] onStack;
-	/**
-	 * Give the previous edge of the given vertex.
-	 */
-	int[] edgeTo;
-	/**
-	 * Cycle is a stack to add cycle forming vertices.
-	 */
-    Stack<Integer> cycle;
+    /**
+     * Boolean array for the vertices.
+     */
+    private boolean[] marked;
+    /**
+     * gives bool whether element is present or not in stack.
+     */
+    private boolean[] onStack;
+    /**
+     * Give the previous edge of the given vertex.
+     */
+    private int[] edgeTo;
+    /**
+     * Cycle is a stack to add cycle forming vertices.
+     */
+    private Stack<Integer> cycle;
     /**
      * Constructs the object.
      */
-	DFs() {
+    DFs() {
 
-	}
+    }
 
     /**
      * Constructs the object for DFS.
      *
-     * @param      G     { parameter_description }
+     * @param      gr     { parameter_description }
      * @param      s     { parameter_description }
      */
-    public DFs(DiGraph G, int s) {
-        marked = new boolean[G.ver()];
-        onStack = new boolean[G.ver()];
-        edgeTo = new int[G.ver()];
+    DFs(final DiGraph gr, final int s) {
+        marked = new boolean[gr.ver()];
+        onStack = new boolean[gr.ver()];
+        edgeTo = new int[gr.ver()];
         validateVertex(s);
         // hasCycle =false;
-        dfs(G, s);
+        dfs(gr, s);
     }
     /**
      * performs DFS.
      *
-     * @param      G     { parameter_description }
+     * @param      gr    { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(DiGraph G, int v) {
+    private void dfs(final DiGraph gr, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : gr.adj(v)) {
 
             // short circuit if directed cycle found
-            if (cycle != null) return;
-
+            if (cycle != null) {
+                return;
             // found new vertex, so recur
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(gr, w);
             }
 
             // trace back directed cycle
@@ -186,27 +186,29 @@ class DFs {
      *
      * @param      v     { parameter_description }
      */
-    private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+    private void validateVertex(final int v) {
+        int v1 = marked.length;
+        if (v < 0 || v >= v1) {
+            throw new IllegalArgumentException("vertex " +
+             v + " is not between 0 and " + (v1 - 1));
+        }
     }
 }
 /**
  * Class for solution.
  */
-class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	Solution() {
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-	}
-	/**
-	 * MAin method.
-	 *
-	 * @param      args  The arguments
-	 */
+    }
+    /**
+     * MAin method.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = Integer.parseInt(sc.nextLine());
@@ -219,11 +221,10 @@ class Solution {
                 Integer.parseInt(numbers[1]));
         }
         DFs cc = new DFs(g, 0);
-        if(cc.hasCycle()){
-        	System.out.println("Cycle exists.");
-        }
-        else{
-        	System.out.println("Cycle doesn't exists.");
+        if (cc.hasCycle()) {
+            System.out.println("Cycle exists.");
+        } else {
+            System.out.println("Cycle doesn't exists.");
 
         }
     }

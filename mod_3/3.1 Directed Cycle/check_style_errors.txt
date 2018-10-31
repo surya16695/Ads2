@@ -1,39 +1,11 @@
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Bag.java:13:19: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Bag.java:17:24: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:106:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:109:19: Variable 'marked' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:113:19: Variable 'onStack' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:117:15: Variable 'edgeTo' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:121:20: Variable 'cycle' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:135:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:135:16: Parameter G should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:135:24: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:135:27: Parameter s should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:149:22: Parameter G should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:149:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:149:33: Parameter v should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:155: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:161:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:189:33: Parameter v should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:190:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:191: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:192: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:192:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:192:94: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:198:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:222:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:222:26: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:224:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:225:13: 'else' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:225:13: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:192:58: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
