@@ -123,7 +123,7 @@ class DFs {
             }
             else {
             	hasCycle = true;
-                     	break;
+                return;
             }
         }
     }
