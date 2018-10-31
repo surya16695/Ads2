@@ -51,6 +51,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Is the stack empty?
+     * @return bool.
      */
     public boolean isEmpty() {
         return first == null;
@@ -58,6 +59,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Return the number of items in the stack.
+     * @return integer.
      */
     public int size() {
         return N;
@@ -77,6 +79,7 @@ public class Stack<Item> implements Iterable<Item> {
    /**
      * Delete and return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
+     * @return item.
      */
     public Item pop() {
         if (isEmpty()) {
@@ -92,6 +95,7 @@ public class Stack<Item> implements Iterable<Item> {
    /**
      * Return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
+     * @return item.
      */
     public Item peek() {
         if (isEmpty()) {
@@ -102,6 +106,7 @@ public class Stack<Item> implements Iterable<Item> {
 
    /**
      * Return string representation.
+     * @return String.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -113,28 +118,45 @@ public class Stack<Item> implements Iterable<Item> {
        
 
    /**
-     * Return an iterator to the stack that iterates through the items in LIFO order.
+     * Return an iterator to the stack
+     *  that iterates through the items in LIFO order.
+     *  @return item.
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
 
+    //
     // an iterator, doesn't implement remove() since it's optional
+    //
     private class ListIterator implements Iterator<Item> {
         private Node current = first;
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return current != null;
         }
+        /**
+         * no operation.
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
 
+        /**
+         * next node item.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }

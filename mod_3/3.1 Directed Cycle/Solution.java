@@ -158,10 +158,9 @@ class DFs {
             } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(gr, w);
-            }
+            } else if (onStack[w]) {
 
             // trace back directed cycle
-            else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -189,8 +188,8 @@ class DFs {
     private void validateVertex(final int v) {
         int v1 = marked.length;
         if (v < 0 || v >= v1) {
-            throw new IllegalArgumentException("vertex " +
-             v + " is not between 0 and " + (v1 - 1));
+            throw new IllegalArgumentException("vertex "
+                + v + " is not between 0 and " + (v1 - 1));
         }
     }
 }
@@ -229,3 +228,4 @@ final class Solution {
         }
     }
 }
+

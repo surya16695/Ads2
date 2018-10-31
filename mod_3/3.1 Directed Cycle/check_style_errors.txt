@@ -1,11 +1,7 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:161:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Solution.java:192:58: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
@@ -21,21 +17,10 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:37: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:40:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:41:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:55: Expected @return tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:62: Expected @return tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:69:22: Parameter item should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:69:27: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:81: Expected @return tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:96: Expected @return tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:106: Expected @return tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:113: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:116: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:118: Expected @return tag. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:123: Missing a Javadoc comment. [JavadocType]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:124:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:125:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:128:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:132:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:137: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:71:22: Parameter item should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:71:27: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:118: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:132: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:133:9: Missing a Javadoc comment. [JavadocVariable]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 19 errors.
