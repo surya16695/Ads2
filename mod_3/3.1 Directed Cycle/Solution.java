@@ -98,34 +98,51 @@ class DiGraph {
 }
 class DFs {
 	boolean[] marked;
+	boolean[] onStack;
 	int[] edgeTo;
 	int count;
-	boolean hasCycle ;
+    Stack<Integer> cycle; 
 	DFs() {
 
 	}
 
     public DFs(DiGraph G, int s) {
         marked = new boolean[G.ver()];
+        onStack = new boolean[G.ver()];
         edgeTo = new int[G.ver()];
         validateVertex(s);
-        hasCycle =false;
-
-
+        // hasCycle =false;
         dfs(G, s);
     }
     private void dfs(DiGraph G, int v) {
+        onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
-            if (!marked[w]) {
+
+            // short circuit if directed cycle found
+            if (cycle != null) return;
+
+            // found new vertex, so recur
+            else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(G, w);
             }
-            else {
-            	hasCycle = true;
-                return;
+
+            // trace back directed cycle
+            else if (onStack[w]) {
+                cycle = new Stack<Integer>();
+                for (int x = v; x != w; x = edgeTo[x]) {
+                    cycle.push(x);
+                }
+                cycle.push(w);
+                cycle.push(v);
+                // assert check();
             }
         }
+        onStack[v] = false;
+    }
+    public boolean hasCycle() {
+        return cycle != null;
     }
     private void validateVertex(int v) {
         int V = marked.length;
@@ -149,7 +166,7 @@ class Solution {
                 Integer.parseInt(numbers[1]));
         }
         DFs cc = new DFs(g, 0);
-        if(cc.hasCycle){
+        if(cc.hasCycle()){
         	System.out.println("Cycle exists.");
         }
         else{
