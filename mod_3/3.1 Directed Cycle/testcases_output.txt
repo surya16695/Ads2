@@ -40,11 +40,9 @@ Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle exists.
-Cycle exists.
-Cycle doesn't exists.
 Cycle doesn't exists.
 Cycle exists.
+Cycle doesn't exists.
 Cycle doesn't exists.
 Cycle doesn't exists.
 Cycle doesn't exists.
@@ -78,11 +76,9 @@ Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle exists.
-Cycle exists.
-Cycle doesn't exists.
 Cycle doesn't exists.
 Cycle exists.
+Cycle doesn't exists.
 Cycle doesn't exists.
 Cycle doesn't exists.
 Cycle doesn't exists.

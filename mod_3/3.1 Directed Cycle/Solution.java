@@ -119,6 +119,7 @@ class DFs {
             }
             else {
             	System.out.println("Cycle exists.");
+            	break;
             }
         }
         System.out.println("Cycle doesn't exists.");
