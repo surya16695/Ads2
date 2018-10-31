@@ -59,9 +59,9 @@ class DiGraph {
      * @param      w     { parameter_description }
      */
     public void addEdge(final int ve, final int w) {
-        if (ve == w) {
-            return;
-        }
+        // if (ve == w) {
+        //     return;
+        // }
         if (!hasEdge(ve, w)) {
             e++;
             adj[ve].add(w);
