@@ -100,6 +100,7 @@ class DFs {
 	boolean[] marked;
 	int[] edgeTo;
 	int count;
+	boolean hasCycle ;
 	DFs() {
 
 	}
@@ -108,6 +109,9 @@ class DFs {
         marked = new boolean[G.ver()];
         edgeTo = new int[G.ver()];
         validateVertex(s);
+        hasCycle =false;
+
+
         dfs(G, s);
     }
     private void dfs(DiGraph G, int v) {
@@ -118,8 +122,8 @@ class DFs {
                 dfs(G, w);
             }
             else {
-            	System.out.println("Cycle exists.");
-            	break;
+            	hasCycle = true;
+                     	break;
             }
         }
     }
@@ -145,5 +149,12 @@ class Solution {
                 Integer.parseInt(numbers[1]));
         }
         DFs cc = new DFs(g, 0);
+        if(cc.hasCycle){
+        	System.out.println("Cycle exists.");
+        }
+        else{
+        	System.out.println("Cycle doesn't exists.");
+
+        }
     }
 }

@@ -4,7 +4,6 @@ Cycle doesn't exists.
 
 Your Output: 
 Cycle exists.
-Cycle exists.
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,15 +12,13 @@ Cycle doesn't exists.
 
 Your Output: 
 Cycle exists.
-Cycle exists.
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle exists.
 Cycle exists.
 ----------------------------------------
 
@@ -30,33 +27,31 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle exists.
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
 Cycle exists.
-Cycle exists.
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 7: Passed ##########
