@@ -31,6 +31,11 @@ import java.util.NoSuchElementException;
  *  <a href="/algs4/13stacks">Section 1.3</a> of.
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
+/**
+ * List of .
+ *
+ * @param      <Item>  The item
+ */
 public class Stack<Item> implements Iterable<Item> {
     /**
      * integer n.

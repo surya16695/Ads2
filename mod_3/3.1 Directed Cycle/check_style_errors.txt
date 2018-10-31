@@ -3,6 +3,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_3\3.1 Directed Cycle\Stack.java:34: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
 Audit done.
-Checkstyle ends with 1 errors.
