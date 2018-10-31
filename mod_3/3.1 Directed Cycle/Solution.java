@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * Class for di graph.
+ */
 class DiGraph {
     /**
      * num of vertices.
@@ -96,16 +99,39 @@ class DiGraph {
         return adj[ve];
     }
 }
+/**
+ * Class for DFS.
+ */
 class DFs {
+	/**
+	 * Boolean array for the vertices.
+	 */
 	boolean[] marked;
+	/**
+	 * gives bool whether element is present or not in stack.
+	 */
 	boolean[] onStack;
+	/**
+	 * Give the previous edge of the given vertex.
+	 */
 	int[] edgeTo;
-	int count;
-    Stack<Integer> cycle; 
+	/**
+	 * Cycle is a stack to add cycle forming vertices.
+	 */
+    Stack<Integer> cycle;
+    /**
+     * Constructs the object.
+     */
 	DFs() {
 
 	}
 
+    /**
+     * Constructs the object for DFS.
+     *
+     * @param      G     { parameter_description }
+     * @param      s     { parameter_description }
+     */
     public DFs(DiGraph G, int s) {
         marked = new boolean[G.ver()];
         onStack = new boolean[G.ver()];
@@ -114,6 +140,12 @@ class DFs {
         // hasCycle =false;
         dfs(G, s);
     }
+    /**
+     * performs DFS.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(DiGraph G, int v) {
         onStack[v] = true;
         marked[v] = true;
@@ -141,19 +173,40 @@ class DFs {
         }
         onStack[v] = false;
     }
+    /**
+     * Determines if it has cycle.
+     *
+     * @return     True if has cycle, False otherwise.
+     */
     public boolean hasCycle() {
         return cycle != null;
     }
+    /**
+     * to validate given vertex is in rangeor not.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
     }
 }
+/**
+ * Class for solution.
+ */
 class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	Solution() {
 
 	}
+	/**
+	 * MAin method.
+	 *
+	 * @param      args  The arguments
+	 */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = Integer.parseInt(sc.nextLine());
