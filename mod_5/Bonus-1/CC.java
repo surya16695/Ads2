@@ -70,9 +70,9 @@ public class CC {
      * @param G the undirected graph
      */
     public CC(Graph G) {
-        marked = new boolean[G.ve()];
-        id = new int[G.ve()];
-        size = new int[G.ve()];
+        marked = new boolean[G.ve() + 1];
+        id = new int[G.ve() + 1];
+        size = new int[G.ve() + 1];
         for (int v = 0; v < G.ve(); v++) {
             if (!marked[v]) {
                 dfs(G, v);

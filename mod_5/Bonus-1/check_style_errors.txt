@@ -55,6 +55,6 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_5\Bonus-1\Solution.java:26:29: Parameter args should be final. [FinalParameters]
 [ERROR] F:\msit\first year\Ads2\mod_5\Bonus-1\Solution.java:40:20: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\msit\first year\Ads2\mod_5\Bonus-1\Solution.java:40:21: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\mod_5\Bonus-1\Solution.java:46: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_5\Bonus-1\Solution.java:50: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 9 errors.

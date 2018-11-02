@@ -39,11 +39,15 @@ class Solution {
             for (int i = 1; i < graph.ve() + 1; i++) {
                 sum=0;
                 for (int k = 1; k < graph.ve() + 1; k++) {
-                    if (i != k) {
+                    // System.out.println(cc.id[k]+"fwefgweuffwhowihfoiw");
+                    // System.out.println("............");
+                    // System.out.println(i+"******");
+                    // if (i != k) {
+
                         if (cc.id[k] == i) {
                             sum++;
                         }
-                    } 
+                    // } 
                 }
             }
             if (tempsum >= sum) {
