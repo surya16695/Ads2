@@ -1,9 +1,10 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 0
 
 Your Output: 
-0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Solution.main(Solution.java:43)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +12,8 @@ Expected Output:
 3
 
 Your Output: 
-0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Solution.main(Solution.java:43)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########

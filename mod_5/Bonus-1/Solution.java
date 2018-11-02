@@ -36,9 +36,9 @@ class Solution {
         CC cc = new CC(graph);
         int sum = 0;
         int tempsum = 0;
-            for (int i = 0; i < graph.ve(); i++) {
+            for (int i = 1; i < graph.ve() + 1; i++) {
                 sum=0;
-                for (int k = 0; k < graph.ve(); k++) {
+                for (int k = 1; k < graph.ve() + 1; k++) {
                     if (i != k) {
                         if (cc.id[k] == i) {
                             sum++;
