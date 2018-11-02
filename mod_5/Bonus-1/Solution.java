@@ -27,7 +27,7 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int v = sc.nextInt();
         int e = sc.nextInt();
-        Graph graph = new Graph(v);
+        Graph graph = new Graph(v + 1);
         while (sc.hasNext()) {
             int a = sc.nextInt();
             int b = sc.nextInt();

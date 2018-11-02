@@ -3,7 +3,7 @@ Expected Output:
 0
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
 	at Solution.main(Solution.java:43)
 ----------------------------------------
 
@@ -12,7 +12,7 @@ Expected Output:
 3
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
 	at Solution.main(Solution.java:43)
 ----------------------------------------
 
@@ -21,8 +21,7 @@ Expected Output:
 7
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
-	at Graph.addEdge(Graph.java:62)
-	at Solution.main(Solution.java:34)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 21
+	at Solution.main(Solution.java:43)
 ----------------------------------------
 
