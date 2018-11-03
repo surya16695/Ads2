@@ -157,10 +157,7 @@ public class WordNet {
             throw new IllegalArgumentException();
         }
         ArrayList<Integer> idsA = nounST.get(nounA);
-        System.out.println(idsA);
-        // System.out.println("Sfheowhwoigwwigwejgiewewoewoewjgewoigjewogjewpogewovpoma;l");
         ArrayList<Integer> idsB = nounST.get(nounB);
-        System.out.println(idsB);
 
         int anc = sap.ancestor(idsA, idsB);
         return idST.get(anc);
