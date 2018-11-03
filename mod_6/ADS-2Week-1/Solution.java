@@ -16,10 +16,10 @@ class PageRank {
 		}
 		maxPr();
 	}
-	Digraph tempgr = gr.reverse();
 	void maxPr() {
+	Digraph tempgr = gr.reverse();
 		for (int i = 0; i < 1000; i++) {
-			for (int j = 0; i < gr.V(); j++) {
+			for (int j = 0; j < gr.V(); j++) {
 				test = 0.0;
 				for (int each : tempgr.adj(j)) {
 					test += (values[each]) / (double)(gr.outdegree(each));
@@ -57,7 +57,7 @@ public class Solution {
 		System.out.println(g);
 		// Create page rank object and pass the graph object to the constructor
 		PageRank pr = new PageRank(g);
-		System.out.println(pr);
+		// System.out.println(pr);
 		// print the page rank object
 		// This part is only for the final test case
 		

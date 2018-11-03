@@ -296,9 +296,7 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:9:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:9:18: Parameter graph should be final. [FinalParameters]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:15:52: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:19:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:19:17: Variable 'tempgr' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:20:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:21:37: '1000' is a magic number. [MagicNumber]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:25: Line is longer than 80 characters (found 94). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:25:74: 'typecast' is not followed by whitespace. [WhitespaceAfter]
@@ -318,7 +316,7 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:74: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 31 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
