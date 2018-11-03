@@ -310,11 +310,11 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:54: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:54: Line is longer than 80 characters (found 104). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:58: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:63: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:66: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:68: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:69: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:74: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:62: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:65: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:67: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:68: Line has trailing spaces. [RegexpSingleline]
+[ERROR] F:\msit\first year\Ads2\mod_6\ADS-2Week-1\Solution.java:73: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 31 errors.
 Starting audit...

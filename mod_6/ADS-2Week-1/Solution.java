@@ -29,7 +29,7 @@ class PageRank {
 			values = prValues.clone();
 		}
 		for (int k = 0; k < gr.V(); k++) {
-			System.out.print(k + " : " + prValues[k] + "\n");
+			System.out.print(k + " - " + prValues[k] + "\n");
 		}
 	}
 }
@@ -57,7 +57,6 @@ public class Solution {
 		System.out.println(g);
 		// Create page rank object and pass the graph object to the constructor
 		PageRank pr = new PageRank(g);
-		// System.out.println(pr);
 		// print the page rank object
 		// This part is only for the final test case
 		
