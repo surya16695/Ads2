@@ -35,8 +35,8 @@ public class SeamCarver {
 			double by = pict.get(x + 1, y).getBlue() - pict.get(x - 1, y).getBlue();
 			double gx = pict.get(x, y + 1).getGreen() - pict.get(x, y - 1).getGreen();
 			double gy = pict.get(x + 1, y).getGreen() - pict.get(x, y - 1).getGreen();
-			double delxsq = (rx) * rx + bx * bx + gx * gx;
-			double delysq = (ry) * ry + by * by + gy * gy;
+			double delxsq = (rx * rx) + (bx * bx) + (gx * gx);
+			double delysq = (ry * ry) + (by * by) + (gy * gy);
 			energ = Math.sqrt(delxsq + delysq);
 		}
 		return energ;
