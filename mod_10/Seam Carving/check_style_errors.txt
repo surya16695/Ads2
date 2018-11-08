@@ -250,14 +250,14 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:35: Line is longer than 80 characters (found 96). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:36: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:37: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:48:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:48:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:53:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:53:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:58:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:58:42: Parameter seam should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:63:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:63:40: Parameter seam should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:46:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:46:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:51:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:51:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:56:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:56:42: Parameter seam should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:61:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\SeamCarver.java:61:40: Parameter seam should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 36 errors.
 Starting audit...
