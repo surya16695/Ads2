@@ -1,9 +1,12 @@
  
 public class SeamCarver {
 	Picture pict;
+	double[][] energyarr;
 	// create a seam carver object based on the given picture
 	public SeamCarver(Picture picture) {
 		this.pict = picture;
+		energyarr = new double[pict.width()] [pict.height()];
+
 	}
 	// current picture
 	public Picture picture() {
@@ -33,7 +36,9 @@ public class SeamCarver {
 			double gx = pict.get(x, y + 1).getGreen() - pict.get(x, y - 1).getGreen();
 			double gy = pict.get(x + 1, y).getGreen() - pict.get(x, y - 1).getGreen();
 			double delxsq = (rx) * rx + bx * bx + gx * gx;
+			System.out.println(delxsq);
 			double delysq = (ry) * ry + by * by + gy * gy;
+			System.out.println(delxsq);
 			energ = Math.sqrt(delxsq + delysq);
 		}
 		return energ;
