@@ -26,12 +26,12 @@ public class SeamCarver {
 			double n = 1000;
 			return n;
 		} else {
-			int rx = pict.get(x, y + 1).getRed() - pict.get(x, y - 1).getRed();
-			int ry = pict.get(x + 1, y).getRed() - pict.get(x - 1, y).getRed();
-			int bx = pict.get(x, y + 1).getBlue() - pict.get(x, y - 1).getBlue();
-			int by = pict.get(x + 1, y).getBlue() - pict.get(x - 1, y).getBlue();
-			int gx = pict.get(x, y + 1).getGreen() - pict.get(x, y - 1).getGreen();
-			int gy = pict.get(x + 1, y).getGreen() - pict.get(x, y - 1).getGreen();
+			double rx = pict.get(x, y + 1).getRed() - pict.get(x, y - 1).getRed();
+			double ry = pict.get(x + 1, y).getRed() - pict.get(x - 1, y).getRed();
+			double bx = pict.get(x, y + 1).getBlue() - pict.get(x, y - 1).getBlue();
+			double by = pict.get(x + 1, y).getBlue() - pict.get(x - 1, y).getBlue();
+			double gx = pict.get(x, y + 1).getGreen() - pict.get(x, y - 1).getGreen();
+			double gy = pict.get(x + 1, y).getGreen() - pict.get(x, y - 1).getGreen();
 			double delxsq = (rx) * rx + bx * bx + gx * gx;
 			double delysq = (ry) * ry + by * by + gy * gy;
 			energ = Math.sqrt(delxsq + delysq);
