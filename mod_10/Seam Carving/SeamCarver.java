@@ -7,7 +7,7 @@ public class SeamCarver {
 		this.pict = picture;
 		energyarr = new double[pict.width()] [pict.height()];
 		if (pict == null) {
-			throw new IllegalArgumentException("picture is null");
+			System.out.println("picture is null");
 		}
 
 	}
@@ -47,7 +47,7 @@ public class SeamCarver {
 	}
 
 	// sequence of indices for horizontal seam
-	public int[] findHorizontalSeam() {
+	public int[] findVerticalSeam() {
 		return new int[0];
 	}
 
@@ -89,10 +89,10 @@ public class SeamCarver {
 		}
 	}
 	// sequence of indices for vertical seam
-	public int[] findVerticalSeam() {
+	public int[] findHorizontalSeam() {
 				int[] chain = new int [height()];
-		for (int i = 0; i < height(); i++) {
-			for (int j = 0; j < width(); j++) {
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
 				chain[i] = minEnergy(i, j);
 			}
 		}
