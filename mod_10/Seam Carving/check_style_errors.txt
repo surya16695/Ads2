@@ -316,9 +316,9 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:84: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:102: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:88: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:100: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_10\Seam Carving\Solution.java:126: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 20 errors.
 Starting audit...

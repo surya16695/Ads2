@@ -6,9 +6,9 @@ public class SeamCarver {
 	public SeamCarver(Picture picture) {
 		this.pict = picture;
 		energyarr = new double[pict.width()] [pict.height()];
-		if (pict == null) {
-			System.out.println("picture is null");
-		}
+		// if (pict == null) {
+		// 	System.out.println("picture is null");
+		// }
 
 	}
 	// current picture
