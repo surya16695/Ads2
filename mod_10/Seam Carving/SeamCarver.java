@@ -1,4 +1,4 @@
- 
+ import java.math.*;
 public class SeamCarver {
 	Picture pict;
 	double[][] energyarr;
@@ -6,6 +6,9 @@ public class SeamCarver {
 	public SeamCarver(Picture picture) {
 		this.pict = picture;
 		energyarr = new double[pict.width()] [pict.height()];
+		if (pict == null) {
+			throw new IllegalArgumentException("picture is null");
+		}
 
 	}
 	// current picture
@@ -39,14 +42,58 @@ public class SeamCarver {
 			double delysq = (ry * ry) + (by * by) + (gy * gy);
 			energ = Math.sqrt(delxsq + delysq);
 		}
+		energyarr[x][y] = energ;
 		return energ;
 	}
 
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-		return new int[0];
+		int[] chain = new int [width()];
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				chain[i] = minEnergy(i, j);
+			}
+		}
+		return chain;
 	}
 
+	public int minEnergy(int x, int y) {
+		double a = energy(x + 1, y - 1);
+		int ay = y - 1;
+		double b = energy(x + 1, y);
+		int by = y; 
+		double c = energy(x + 1, y + 1);
+		int cy = y + 1;
+		if (y - 1 == 0) {
+			double z = Math.min(b, c);
+			if (z == b) {
+				return by;
+			} else {
+				return cy;
+			}
+
+		} else if (y + 1 == height() - 1) {
+			double e = Math.min(a, b);
+			if (b == e) {
+				return by;
+			} else {
+				return ay;
+			}
+
+		} else if (x + 1 == width() - 1) {
+			return y;
+
+		}else {
+			double d = Math.min(Math.min(a, b), Math.min(b, c));
+			if (d == b) {
+				return by;
+			} else if (d == c) {
+				return cy;
+			} else {
+				return ay;
+			}
+		}
+	}
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
 		return new int[0];
