@@ -48,13 +48,7 @@ public class SeamCarver {
 
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-		int[] chain = new int [width()];
-		for (int i = 0; i < width(); i++) {
-			for (int j = 0; j < height(); j++) {
-				chain[i] = minEnergy(i, j);
-			}
-		}
-		return chain;
+		return new int[0];
 	}
 
 	public int minEnergy(int x, int y) {
@@ -96,8 +90,15 @@ public class SeamCarver {
 	}
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		return new int[0];
+				int[] chain = new int [width()];
+		for (int i = 0; i < width(); i++) {
+			for (int j = 0; j < height(); j++) {
+				chain[i] = minEnergy(i, j);
+			}
+		}
+		return chain;
 	}
+
 
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
