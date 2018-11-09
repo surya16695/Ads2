@@ -91,8 +91,8 @@ public class SeamCarver {
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
 				int[] chain = new int [width()];
-		for (int i = 0; i < width(); i++) {
-			for (int j = 0; j < height(); j++) {
+		for (int i = 0; i < height(); i++) {
+			for (int j = 0; j < width(); j++) {
 				chain[i] = minEnergy(i, j);
 			}
 		}
