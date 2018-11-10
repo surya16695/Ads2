@@ -27,7 +27,9 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-
+			String[] path = sc.nextLine().split(" ");
+			DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(eg, Integer.parseInt(path[0]));
+			System.out.println((long) dsp.distTo(Integer.parseInt(path[1])));
 			break;
 
 		case "ViaPaths":
