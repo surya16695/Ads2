@@ -50,8 +50,17 @@ public class Solution {
 			int b3 = Integer.parseInt(paths[2]);
 			DijkstraUndirectedSP dsp1 = new DijkstraUndirectedSP(eg, b1);
 			DijkstraUndirectedSP dsp2 = new DijkstraUndirectedSP(eg, b2);
+			String s = "";
 			if (dsp1.hasPathTo(b2) && dsp2.hasPathTo(b3)) {
 				System.out.println((double) dsp1.distTo(b2) + (double) dsp2.distTo(b3));
+				for (Edge ed: dsp1.pathTo(b2)) {
+					s += ed.w + " " + ed.v + " ";
+				}
+				for (Edge ee: dsp2.pathTo(b3)) {
+					s += ee.w + " " + ee.v + " ";
+				}
+				String se = removeDuplicates(s);
+				System.out.println(se);
 			} else {
 				System.out.println("No Path Found.");
 			}
@@ -61,5 +70,14 @@ public class Solution {
 			break;
 		}
 
+	}
+	public static String removeDuplicates(String input){
+	    String result = "";
+	    for (int i = 0; i < input.length(); i++) {
+	        if(!result.contains(String.valueOf(input.charAt(i)))) {
+	            result += String.valueOf(input.charAt(i)) + " ";
+	        }
+	    }
+	    return result;
 	}
 }

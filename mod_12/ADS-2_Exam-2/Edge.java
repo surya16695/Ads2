@@ -25,8 +25,8 @@
  */
 public class Edge implements Comparable<Edge> { 
 
-    private final int v;
-    private final int w;
+    final int v;
+    final int w;
     private final double weight;
 
     /**
