@@ -6,10 +6,10 @@ public class Solution {
 		int a = Integer.parseInt(sc.nextLine());
 		int b = Integer.parseInt(sc.nextLine());
 		EdgeWeightedGraph eg = new EdgeWeightedGraph(a);
-		while (a > 0) {
+		while (b > 0) {
 			String[] tokens = sc.nextLine().split(" ");
 			eg.createEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
-			a--;
+			b--;
 		}
 		// Self loops are not allowed...
 		// Parallel Edges are allowed...
@@ -27,6 +27,7 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+
 			break;
 
 		case "ViaPaths":
