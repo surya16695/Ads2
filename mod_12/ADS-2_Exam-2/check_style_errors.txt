@@ -1,9 +1,6 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:5: Class Solution should be declared as final. [FinalClass]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
