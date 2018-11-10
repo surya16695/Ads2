@@ -92,8 +92,9 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\EdgeWeightedGraph.java:228: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\EdgeWeightedGraph.java:230: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\EdgeWeightedGraph.java:242: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\EdgeWeightedGraph.java:247:38: '+' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 56 errors.
+Checkstyle ends with 57 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
