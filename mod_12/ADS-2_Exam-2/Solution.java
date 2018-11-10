@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+class Solution {
     /**
      * Constructs the object.
      */
@@ -28,7 +28,7 @@ public class Solution {
         // Self loops are not allowed...
         // Parallel Edges are allowed...
         // Take the Graph input here...
-        
+
 
         String caseToGo = sc.nextLine();
         switch (caseToGo) {
@@ -53,7 +53,8 @@ public class Solution {
             break;
 
         case "ViaPaths":
-            // Handle the case of ViaPaths, where three integers are given.
+            // Handle the case of ViaPaths, where
+            // three integers are given.
             // First is the source and second is the via is the one where path should pass throuh.
             // third is the destination.
             // If the path exists print the distance between them.
@@ -66,7 +67,8 @@ public class Solution {
             DijkstraUndirectedSP dsp2 = new DijkstraUndirectedSP(eg, b2);
             String s = "";
             if (dsp1.hasPathTo(b2) && dsp2.hasPathTo(b3)) {
-                System.out.println((double) dsp1.distTo(b2) + (double) dsp2.distTo(b3));
+                System.out.println((double) dsp1.distTo(b2)
+                 + (double) dsp2.distTo(b3));
                 for (Edge ed: dsp1.pathTo(b2)) {
                     s += ed.w + " " + ed.v + " ";
                 }
@@ -92,10 +94,10 @@ public class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String removeDuplicates(final String input){
+    public static String removeDuplicates(final String input) {
         String result = "";
         for (int i = 0; i < input.length(); i++) {
-            if(!result.contains(String.valueOf(input.charAt(i)))) {
+            if (!result.contains(String.valueOf(input.charAt(i)))) {
                 result += String.valueOf(input.charAt(i)) + " ";
             }
         }

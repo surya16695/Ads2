@@ -1,9 +1,5 @@
 Starting audit...
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Bag.java:13:19: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Bag.java:17:24: ';' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:30: Line has trailing spaces. [RegexpSingleline]
@@ -67,33 +63,19 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:20: Line is longer than 80 characters (found 102). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:26: Line has trailing spaces. [RegexpSingleline]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:28:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:28:15: Variable 'v' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:28:22: Variable 'v' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:29:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:29:15: Variable 'w' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:30:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:39: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:43:17: Parameter v should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:43:21: 'v' hides a field. [HiddenField]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:43:24: Parameter w should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:43:28: 'w' hides a field. [HiddenField]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:43:31: Parameter weight should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:43:38: 'weight' hides a field. [HiddenField]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:44: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:44: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:45: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:45: Line is longer than 80 characters (found 100). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:71: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:78:22: Parameter vertex should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:79: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:80: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:81: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:87: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:90: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:95:26: Parameter that should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:29:22: Variable 'w' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46:17: Parameter v should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46:21: 'v' hides a field. [HiddenField]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46:24: Parameter w should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46:28: 'w' hides a field. [HiddenField]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46:31: Parameter weight should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:46:38: 'weight' hides a field. [HiddenField]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:48: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:51: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 16 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\EdgeWeightedGraph.java:12: Line has trailing spaces. [RegexpSingleline]
@@ -265,12 +247,8 @@ Checkstyle ends with 105 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:31: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:57: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:69: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:95:62: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:98:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:58: Line is longer than 80 characters (found 98). [LineLength]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
