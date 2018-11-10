@@ -7,7 +7,7 @@
  *
  ******************************************************************************/
 
-// package edu.princeton.cs.algs4;
+package edu.princeton.cs.algs4;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -331,36 +331,36 @@ public class IndexMinPQ<Key extends Comparable<Key>> implements Iterable<Integer
      *
      * @param args the command-line arguments
      */
-    // public static void main(String[] args) {
-    //     // insert a bunch of strings
-    //     String[] strings = { "it", "was", "the", "best", "of", "times", "it", "was", "the", "worst" };
+    public static void main(String[] args) {
+        // insert a bunch of strings
+        String[] strings = { "it", "was", "the", "best", "of", "times", "it", "was", "the", "worst" };
 
-    //     IndexMinPQ<String> pq = new IndexMinPQ<String>(strings.length);
-    //     for (int i = 0; i < strings.length; i++) {
-    //         pq.insert(i, strings[i]);
-    //     }
+        IndexMinPQ<String> pq = new IndexMinPQ<String>(strings.length);
+        for (int i = 0; i < strings.length; i++) {
+            pq.insert(i, strings[i]);
+        }
 
-    //     // delete and print each key
-    //     while (!pq.isEmpty()) {
-    //         int i = pq.delMin();
-    //         StdOut.println(i + " " + strings[i]);
-    //     }
-    //     StdOut.println();
+        // delete and print each key
+        while (!pq.isEmpty()) {
+            int i = pq.delMin();
+            StdOut.println(i + " " + strings[i]);
+        }
+        StdOut.println();
 
-    //     // reinsert the same strings
-    //     for (int i = 0; i < strings.length; i++) {
-    //         pq.insert(i, strings[i]);
-    //     }
+        // reinsert the same strings
+        for (int i = 0; i < strings.length; i++) {
+            pq.insert(i, strings[i]);
+        }
 
-    //     // print each key using the iterator
-    //     for (int i : pq) {
-    //         StdOut.println(i + " " + strings[i]);
-    //     }
-    //     while (!pq.isEmpty()) {
-    //         pq.delMin();
-    //     }
+        // print each key using the iterator
+        for (int i : pq) {
+            StdOut.println(i + " " + strings[i]);
+        }
+        while (!pq.isEmpty()) {
+            pq.delMin();
+        }
 
-    // }
+    }
 }
 
 /******************************************************************************

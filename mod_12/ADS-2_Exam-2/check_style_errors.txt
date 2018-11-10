@@ -56,8 +56,11 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:218: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:218:93: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:218:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:226:29: Parameter args should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:228:27: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\DijkstraUndirectedSP.java:243:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 51 errors.
+Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Edge.java:13: Line has trailing spaces. [RegexpSingleline]
@@ -254,9 +257,11 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:320:35: '{' at column 35 should have line break after. [LeftCurly]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:322:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:323: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:336: Line is longer than 80 characters (found 105). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:334:29: Parameter args should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:336: Line is longer than 80 characters (found 102). [LineLength]
+[ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\IndexMinPQ.java:336:29: '{' is followed by whitespace. [NoWhitespaceAfter]
 Audit done.
-Checkstyle ends with 103 errors.
+Checkstyle ends with 105 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_12\ADS-2_Exam-2\Solution.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
