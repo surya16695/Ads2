@@ -28,8 +28,14 @@ public class Solution {
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			String[] path = sc.nextLine().split(" ");
-			DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(eg, Integer.parseInt(path[0]));
-			System.out.println((long) dsp.distTo(Integer.parseInt(path[1])));
+			int a1 = Integer.parseInt(path[0]);
+			int a2 = Integer.parseInt(path[1]);
+			DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(eg, a1);
+			if (dsp.hasPathTo(a2)) {
+				System.out.println((double) dsp.distTo(a2));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		case "ViaPaths":
