@@ -6,7 +6,7 @@ public class Solution {
 		int a = Integer.parseInt(sc.nextLine());
 		int b = Integer.parseInt(sc.nextLine());
 		EdgeWeightedGraph eg = new EdgeWeightedGraph(a);
-		while (b > 0) {
+		while (a > 0) {
 			String[] tokens = sc.nextLine().split(" ");
 			eg.createEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
 			a--;
