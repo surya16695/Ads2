@@ -20,11 +20,25 @@ class Solution {
 		int sum = 0;
 		for (int i = 0; i < s; i++) {
 			for (int j = 0; j < s; j++) {
-				int a = array[i - 1][j];
-				int b = array[i + 1][j];
-				int c = array[i][j - 1];
-				int d = array[i][j + 1];
-				sum += Math.min(Math.min(a, b), Math.min(c, d));
+				if (i <= 0 ) {
+					int c = array[i][j - 1];
+					int d = array[i][j + 1];
+					int b = array[i + 1][j];
+					sum += Math.min(b, Math.min(c, d));
+					
+				} else if (j <= 0) {
+					int b = array[i + 1][j];
+					int a = array[i - 1][j];
+					int d = array[i][j + 1];
+					sum += Math.min(Math.min(a, b), d);
+					
+				} else {
+					int a = array[i - 1][j];
+					int b = array[i + 1][j];
+					int c = array[i][j - 1];
+					int d = array[i][j + 1];
+					sum += Math.min(Math.min(a, b), Math.min(c, d));
+				}
 			}
 		}
 		return sum;
