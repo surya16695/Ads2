@@ -1,0 +1,36 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2297
+
+Your Output: 
+Error: Main method is not static in class Solution, please define the main method as:
+   public static void main(String[] args)
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+2040
+
+Your Output: 
+Error: Main method is not static in class Solution, please define the main method as:
+   public static void main(String[] args)
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+7858
+
+Your Output: 
+Error: Main method is not static in class Solution, please define the main method as:
+   public static void main(String[] args)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+1399000000000
+
+Your Output: 
+Error: Main method is not static in class Solution, please define the main method as:
+   public static void main(String[] args)
+----------------------------------------
+
