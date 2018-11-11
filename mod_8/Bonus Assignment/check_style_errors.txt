@@ -1,13 +1,13 @@
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:3:13: Variable 'n' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:7:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:7:27: Parameter args should be final. [FinalParameters]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:20:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:20:27: Parameter array should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:6:33: Parameter args should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:19:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:19:34: Parameter array should be final. [FinalParameters]
+[ERROR] F:\msit\first year\Ads2\mod_8\Bonus Assignment\Solution.java:19:49: Parameter s should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 10 errors.

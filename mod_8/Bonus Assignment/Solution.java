@@ -1,12 +1,11 @@
 import java.util.Scanner;
 class Solution {
-	int n;
 	Solution() {
 
 	}
-	public  void main(String[] args) {
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
+		int n = sc.nextInt();
 		int[][] arr = new int[n][n];
 		while (n > 0) {
 			for (int i = 0; i < n; i++) {
@@ -15,12 +14,12 @@ class Solution {
 				}
 			}
 		}
-		System.out.println(minSum(arr));
+		System.out.println(minSum(arr, n));
 	}
-	public int minSum(int[][] array) {
+	public static int minSum(int[][] array, int s) {
 		int sum = 0;
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
+		for (int i = 0; i < s; i++) {
+			for (int j = 0; j < s; j++) {
 				int a = array[i - 1][j];
 				int b = array[i + 1][j];
 				int c = array[i][j - 1];

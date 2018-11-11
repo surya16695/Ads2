@@ -3,8 +3,12 @@ Expected Output:
 2297
 
 Your Output: 
-Error: Main method is not static in class Solution, please define the main method as:
-   public static void main(String[] args)
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -12,8 +16,12 @@ Expected Output:
 2040
 
 Your Output: 
-Error: Main method is not static in class Solution, please define the main method as:
-   public static void main(String[] args)
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -21,8 +29,12 @@ Expected Output:
 7858
 
 Your Output: 
-Error: Main method is not static in class Solution, please define the main method as:
-   public static void main(String[] args)
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -30,7 +42,11 @@ Expected Output:
 1399000000000
 
 Your Output: 
-Error: Main method is not static in class Solution, please define the main method as:
-   public static void main(String[] args)
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Scanner.java:937)
+	at java.base/java.util.Scanner.next(Scanner.java:1594)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+	at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+	at Solution.main(Solution.java:13)
 ----------------------------------------
 
