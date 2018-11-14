@@ -4,13 +4,13 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = Integer.parseInt(sc.nextLine());
-		int[] arr = new int[n];
+		String[] arr = new String[n];
 		int i = 0;
 		while (i < n) {
-			arr[i] = sc.nextInt();
+			arr[i] = sc.nextLine();
 		}
 		LSD le = new LSD();
-		le.sort(arr);
+		le.sort(arr, 8);
 		System.out.println(Arrays.toString(arr));
 	}
 }
