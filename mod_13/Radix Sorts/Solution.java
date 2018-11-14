@@ -8,6 +8,7 @@ class Solution {
 		int i = 0;
 		while (i < n) {
 			arr[i] = sc.nextLine();
+			i++;
 		}
 		LSD le = new LSD();
 		le.sort(arr, 8);
