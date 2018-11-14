@@ -10,8 +10,9 @@ class Solution {
 			arr[i] = sc.nextLine();
 			i++;
 		}
+		int w = arr[0].length();
 		LSD le = new LSD();
-		le.sort(arr, 8);
+		le.sort(arr, w);
 		System.out.println(Arrays.toString(arr));
 	}
 }
