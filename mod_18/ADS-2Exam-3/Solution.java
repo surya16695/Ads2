@@ -2,10 +2,18 @@ import java.util.Scanner;
 import java.util.*;
 
 
+/**
+ * Class for solution.
+ */
 public class Solution {
 
+	/**
+	 * { function_description }main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 	// Don't modify this method.
-	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -80,12 +88,27 @@ public class Solution {
 		}
 	}
 
-	// Don't modify this method.
+	/**
+	 * { function_description }reads file.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] toReadFile(String file) {
+	// Don't modify this method.
 		In in = new In(file);
 		return in.readAllStrings();
 	}
 
+	/**
+	 * Loads a dictionary.
+	 * compllexity of time N^2.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
@@ -104,9 +127,20 @@ public class Solution {
 	}
 }
 
+/**
+ * Class for t 9.
+ */
 class T9 {
+	/**
+	 * { var_description }
+	 */
 	private TST<Integer> tst;
 
+	/**
+	 * Constructs the object.
+	 *complexity of time - N =(no of keys).
+	 * @param      st    { parameter_description }
+	 */
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tst = new TST<Integer>();
@@ -116,12 +150,27 @@ class T9 {
 
 	}
 
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
+	public Iterable<String> getAllWords(final String prefix) {
 	// get all the prefixes that match with given prefix.
-	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
 		return tst.keysWithPrefix(prefix);
 	}
-	public String compare(String word) {
+	/**
+	 * compares.
+	 * complexity n=(number of chars in word) .
+	 *
+	 * @param      word  The word
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public String compare(final String word) {
 		String[] c = word.split("");
 			String val = "";
 			for (String each : c) {
@@ -153,7 +202,14 @@ class T9 {
 			return val;
 		}
 
-	public Iterable<String> potentialWords(String t9Signature) {
+		/**
+		 * { function_description }
+		 *
+		 * @param      t9Signature  The t 9 signature
+		 *
+		 * @return     { description_of_the_return_value }
+		 */
+	public Iterable<String> potentialWords(final String t9Signature) {
 		// your code goes here
 		TreeSet<String> set = new TreeSet<>();
 		for (String word : tst.keys()) {
@@ -166,7 +222,7 @@ class T9 {
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
-	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
+	public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
 		// your code goes here
 		TreeSet<String> set = new TreeSet<>();
 		MaxPQ<Integer> maxpq = new MaxPQ<>();
@@ -184,9 +240,15 @@ class T9 {
 		return set;
 	}
 
-	// final output
-	// Don't modify this method.
-	public Iterable<String> t9(String t9Signature, int k) {
+	//
+	// final output Don't modify this method.
+	//
+	// @param      t9Signature  The t 9 signature
+	// @param      k            { parameter_description }
+	//
+	// @return     { description_of_the_return_value }
+	//
+	public Iterable<String> t9(final String t9Signature, final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 }
