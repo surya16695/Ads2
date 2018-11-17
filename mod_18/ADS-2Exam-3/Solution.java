@@ -144,7 +144,7 @@ class T9 {
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 		tst = new TST<Integer>();
-		for(String each : st.keys()) {
+		for (String each : st.keys()) {
 			tst.put(each, st.get(each));
 		}
 
@@ -174,28 +174,36 @@ class T9 {
 		String[] c = word.split("");
 			String val = "";
 			for (String each : c) {
-				if (each.equals("a") || each.equals("b") || each.equals("c")) {
+				if (each.equals("a") || each.equals("b") ||
+				 each.equals("c")) {
 					val = val + "2";
 				}
-				if (each.equals("d") || each.equals("e") || each.equals("f")) {
+				if (each.equals("d") || each.equals("e") ||
+				 each.equals("f")) {
 					val = val + "3";
 				}
-				if (each.equals("g") || each.equals("h") || each.equals("i")) {
+				if (each.equals("g") || each.equals("h") ||
+				 each.equals("i")) {
 					val = val + "4";
 				}
-				if (each.equals("j") || each.equals("k") || each.equals("l")) {
+				if (each.equals("j") || each.equals("k") ||
+				 each.equals("l")) {
 					val = val + "5";
 				}
-				if (each.equals("m") || each.equals("n") || each.equals("o")) {
+				if (each.equals("m") || each.equals("n") ||
+				 each.equals("o")) {
 					val = val + "6";
 				}
-				if (each.equals("p") || each.equals("q") || each.equals("r") || each.equals("s")) {
+				if (each.equals("p") || each.equals("q") ||
+				 each.equals("r") || each.equals("s")) {
 					val = val + "7";
 				}
-				if (each.equals("t") || each.equals("u") || each.equals("v")) {
+				if (each.equals("t") || each.equals("u") ||
+				 each.equals("v")) {
 					val = val + "8";
 				}
-				if (each.equals("w") || each.equals("x") || each.equals("y") || each.equals("z")) {
+				if (each.equals("w") || each.equals("x") ||
+				 each.equals("y") || each.equals("z")) {
 					val = val + "9";
 				}
 			}
@@ -203,7 +211,7 @@ class T9 {
 		}
 
 		/**
-		 * { function_description }
+		 * { function_description }.
 		 *
 		 * @param      t9Signature  The t 9 signature
 		 *
@@ -221,8 +229,16 @@ class T9 {
 		return set;
 	}
 
-	// return all possibilities(words), find top k with highest frequency.
+	/**
+	 * Gets the suggestions.
+	 *complexity N^2.
+	 * @param      words  The words
+	 * @param      k      { parameter_description }
+	 *
+	 * @return     The suggestions.
+	 */
 	public Iterable<String> getSuggestions(final Iterable<String> words, final int k) {
+	// return all possibilities(words), find top k with highest frequency.
 		// your code goes here
 		TreeSet<String> set = new TreeSet<>();
 		MaxPQ<Integer> maxpq = new MaxPQ<>();
@@ -248,6 +264,14 @@ class T9 {
 	//
 	// @return     { description_of_the_return_value }
 	//
+	/**
+	 * { function_description }.
+	 *complexity n.
+	 * @param      t9Signature  The t 9 signature
+	 * @param      k            { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public Iterable<String> t9(final String t9Signature, final int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
