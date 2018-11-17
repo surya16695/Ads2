@@ -121,10 +121,48 @@ class T9 {
 		// your code goes here
 		return tst.keysWithPrefix(prefix);
 	}
+	public String compare(String word) {
+		String[] c = word.split("");
+			String value = "";
+			for (String each : c) {
+				if (each.equals("a") || each.equals("b") || each.equals("c")) {
+					value = value + "2";
+				}
+				if (each.equals("d") || each.equals("e") || each.equals("f")) {
+					value = value + "3";
+				}
+				if (each.equals("g") || each.equals("h") || each.equals("i")) {
+					value = value + "4";
+				}
+				if (each.equals("j") || each.equals("k") || each.equals("l")) {
+					value = value + "5";
+				}
+				if (each.equals("m") || each.equals("n") || each.equals("o")) {
+					value = value + "6";
+				}
+				if (each.equals("p") || each.equals("q") || each.equals("r") || each.equals("s")) {
+					value = value + "7";
+				}
+				if (each.equals("t") || each.equals("u") || each.equals("v")) {
+					value = value + "8";
+				}
+				if (each.equals("w") || each.equals("x") || each.equals("y") || each.equals("z")) {
+					value = value + "9";
+				}
+			}
+			return value;
+		}
 
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		TreeSet<String> set = new TreeSet<>();
+		for (String word : tst.keys()) {
+			String s = compare(word);
+			if (s.equals(t9Signature)) {
+				set.add(word);
+			}
+		}
+		return set;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.
