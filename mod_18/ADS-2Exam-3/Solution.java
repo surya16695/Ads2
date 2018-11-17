@@ -123,34 +123,34 @@ class T9 {
 	}
 	public String compare(String word) {
 		String[] c = word.split("");
-			String value = "";
+			String val = "";
 			for (String each : c) {
 				if (each.equals("a") || each.equals("b") || each.equals("c")) {
-					value = value + "2";
+					val = val + "2";
 				}
 				if (each.equals("d") || each.equals("e") || each.equals("f")) {
-					value = value + "3";
+					val = val + "3";
 				}
 				if (each.equals("g") || each.equals("h") || each.equals("i")) {
-					value = value + "4";
+					val = val + "4";
 				}
 				if (each.equals("j") || each.equals("k") || each.equals("l")) {
-					value = value + "5";
+					val = val + "5";
 				}
 				if (each.equals("m") || each.equals("n") || each.equals("o")) {
-					value = value + "6";
+					val = val + "6";
 				}
 				if (each.equals("p") || each.equals("q") || each.equals("r") || each.equals("s")) {
-					value = value + "7";
+					val = val + "7";
 				}
 				if (each.equals("t") || each.equals("u") || each.equals("v")) {
-					value = value + "8";
+					val = val + "8";
 				}
 				if (each.equals("w") || each.equals("x") || each.equals("y") || each.equals("z")) {
-					value = value + "9";
+					val = val + "9";
 				}
 			}
-			return value;
+			return val;
 		}
 
 	public Iterable<String> potentialWords(String t9Signature) {
