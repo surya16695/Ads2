@@ -5,7 +5,7 @@ Expected Output:
 
 Your Output: 
 0
-3
+0
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -18,14 +18,14 @@ Your Output:
 3
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 0
 4
 
 Your Output: 
 0
-1
+4
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -48,25 +48,23 @@ Your Output:
 3
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 2
 1
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at Graph.addEdge(Graph.java:184)
-	at Solution.main(Solution.java:11)
+2
+1
 ----------------------------------------
 
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 5
 0
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at Graph.addEdge(Graph.java:183)
-	at Solution.main(Solution.java:11)
+5
+0
 ----------------------------------------
 
