@@ -173,12 +173,14 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:32: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:32:42: 'else' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:32:42: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:46:49: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:46:50: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:48:31: 'else' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:48:31: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:47:49: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:47:50: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:49:31: 'else' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:49:31: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:58:49: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\Solution.java:58:50: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 26 errors.
+Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\ST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\ADS - 2 Remedial\ST.java:6: Line has trailing spaces. [RegexpSingleline]

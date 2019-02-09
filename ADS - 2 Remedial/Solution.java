@@ -42,12 +42,20 @@ class Solution{
 					if (count3 < g.getBag(z).size()) {
 						count3 = g.getBag(z).size();
 					}
+
 				}
 				count1 += count3-1;
 				System.out.println(count1);
 			} else{
-				// int count4 = 0;
 				System.out.println(flag2);
+				int count4 = 0;
+				for (int z : g.getBag(flag1)) {
+					if (count4 < g.getBag(z).size()) {
+						count4 = g.getBag(z).size();
+					}
+
+				}
+				count2 += count4-1;
 				System.out.println(count2);
 			}
 		}
