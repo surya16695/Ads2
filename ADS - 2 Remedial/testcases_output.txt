@@ -1,0 +1,72 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2
+3
+
+Your Output: 
+0
+3
+----------------------------------------
+
+########## Testcase 1: Passed ##########
+Expected Output: 
+1
+3
+
+Your Output: 
+1
+3
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+0
+4
+
+Your Output: 
+0
+1
+----------------------------------------
+
+########## Testcase 3: Passed ##########
+Expected Output: 
+1
+3
+
+Your Output: 
+1
+3
+----------------------------------------
+
+########## Testcase 4: Failed ##########
+Expected Output: 
+1
+5
+
+Your Output: 
+1
+3
+----------------------------------------
+
+########## Testcase 5: Failed ##########
+Expected Output: 
+2
+1
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+	at Graph.addEdge(Graph.java:184)
+	at Solution.main(Solution.java:11)
+----------------------------------------
+
+########## Testcase 6: Failed ##########
+Expected Output: 
+5
+0
+
+Your Output: 
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
+	at Graph.addEdge(Graph.java:183)
+	at Solution.main(Solution.java:11)
+----------------------------------------
+
