@@ -17,7 +17,7 @@ class Solution {
 			int i = 0;
 			for (int each : dy.cycle()) {
 		      	if(i > 0) {
-			      	s += i + ", ";
+			      	s += each + ", ";
 		      	}
 		      	i++;
 		    }
