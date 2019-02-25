@@ -135,17 +135,16 @@ Starting audit...
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:170:29: Parameter args should be final. [FinalParameters]
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:172:13: Name 'num_of_people' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:173:13: Name 'num_of_benefeciaries' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:174:17: Name 'd_graph' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:175:50: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:177: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:177:59: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:177: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:177:54: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:179: Line has trailing spaces. [RegexpSingleline]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:180:23: Name 'd_cycle' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:186: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:186:63: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:186:79: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:182:9: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:189: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:189:63: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Solutions.java:189:79: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 47 errors.
+Checkstyle ends with 46 errors.
 Starting audit...
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] F:\msit\first year\Ads2\exam\ADS-remedial\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

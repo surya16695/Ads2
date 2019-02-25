@@ -168,17 +168,20 @@ class DirectedCycle {
 class Solutions {
     
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int num_of_people = Integer.parseInt(scan.nextLine());
-        int num_of_benefeciaries = Integer.parseInt(scan.nextLine());
-        Digraph d_graph = new Digraph(num_of_people);
+        Scanner sc = new Scanner(System.in);
+        int num_of_people = Integer.parseInt(sc.nextLine());
+        int num_of_benefeciaries = Integer.parseInt(sc.nextLine());
+        Digraph dg = new Digraph(num_of_people);
         for (int i = 0; i < num_of_benefeciaries;i++) {
-            String[] vertices = scan.nextLine().split(" ");
-            d_graph.addEdge(Integer.parseInt(vertices[0]),Integer.parseInt(vertices[1]));
+            String[] vertices = sc.nextLine().split(" ");
+            dg.addEdge(Integer.parseInt(vertices[0]),Integer.parseInt(vertices[1]));
         }
         
-        DirectedCycle d_cycle = new DirectedCycle(d_graph);
-        for (Stack<Integer> s: d_cycle.lists) {
+        DirectedCycle cycle = new DirectedCycle(dg);
+        if (cycle.lists == null) {
+        	System.out.println("No Self Beneficiaries.");
+        }
+        for (Stack<Integer> s: cycle.lists) {
             TreeSet<Integer> treeset = new TreeSet<Integer>();
             for (Integer i : s) {
                 treeset.add(i);
