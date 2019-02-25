@@ -178,7 +178,7 @@ class Solutions {
         }
         
         DirectedCycle cycle = new DirectedCycle(dg);
-        if (cycle.lists == null) {
+        if (cycle.lists.isEmpty()) {
         	System.out.println("No Self Beneficiaries.");
         }
         for (Stack<Integer> s: cycle.lists) {
